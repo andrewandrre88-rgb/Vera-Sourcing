@@ -59,6 +59,8 @@ const Navbar = ({ lang, setLang }: { lang: Language, setLang: (l: Language) => v
         <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
           <a href="#services" className="hover:text-slate-900 transition-colors">{t.services}</a>
           <a href="#industries" className="hover:text-slate-900 transition-colors">{translations[lang].industries.title}</a>
+          <a href="#amazon-fba" className="hover:text-slate-900 transition-colors">{t.amazon_fba}</a>
+          <a href="#ecommerce-support" className="hover:text-slate-900 transition-colors">{t.ecommerce}</a>
           <a href="#pricing" className="hover:text-slate-900 transition-colors">{t.pricing}</a>
           <a href="#about" className="hover:text-slate-900 transition-colors">{t.about}</a>
           <a href="#how-it-works" className="hover:text-slate-900 transition-colors">{translations[lang].nav.home}</a>
@@ -116,6 +118,8 @@ const Navbar = ({ lang, setLang }: { lang: Language, setLang: (l: Language) => v
             </div>
             <a href="#services" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.services}</a>
             <a href="#industries" onClick={() => setIsOpen(false)} className="text-lg font-medium">{translations[lang].industries.title}</a>
+            <a href="#amazon-fba" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.amazon_fba}</a>
+            <a href="#ecommerce-support" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.ecommerce}</a>
             <a href="#pricing" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.pricing}</a>
             <a href="#about" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.about}</a>
             <a href="#faq" onClick={() => setIsOpen(false)} className="text-lg font-medium">FAQ</a>
@@ -309,6 +313,17 @@ const LogisticsSection = ({ lang }: { lang: Language }) => {
                   <p className="text-slate-400">{t.customs_desc}</p>
                 </div>
               </div>
+              {t.warehousing && (
+                <div className="flex gap-6">
+                  <div className="w-12 h-12 bg-slate-800 rounded-2xl flex items-center justify-center shrink-0 border border-slate-700">
+                    <Handshake className="text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">{t.warehousing}</h3>
+                    <p className="text-slate-400">{t.warehousing_desc}</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -375,6 +390,67 @@ const IPProtectionSection = ({ lang }: { lang: Language }) => {
               </div>
               <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
               <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const AmazonFbaSection = ({ lang }: { lang: Language }) => {
+  const t = translations[lang].amazon_fba;
+  return (
+    <section id="amazon-fba" className="section-padding bg-slate-50">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="order-2 lg:order-1">
+          <img 
+            src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&q=80&w=800" 
+            alt="Amazon FBA Prep" 
+            className="rounded-[3rem] shadow-2xl w-full aspect-square object-cover"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+        <div className="order-1 lg:order-2">
+          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-slate-500 uppercase bg-slate-100 rounded-full">
+            {t.subtitle}
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-8">{t.title}</h2>
+          <p className="text-lg text-slate-600 mb-10 leading-relaxed">{t.description}</p>
+          <div className="grid sm:grid-cols-2 gap-8">
+            {t.items.map((item, index) => (
+              <div key={index}>
+                <div className="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center mb-4">
+                  <CheckCircle2 size={20} />
+                </div>
+                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const EcommerceSupportSection = ({ lang }: { lang: Language }) => {
+  const t = translations[lang].ecommerce_support;
+  return (
+    <section id="ecommerce-support" className="section-padding bg-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">{t.title}</h2>
+          <p className="text-slate-600 max-w-2xl mx-auto">{t.description}</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {t.items.map((item, index) => (
+            <div key={index} className="bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 hover:bg-slate-900 hover:text-white transition-all group">
+              <div className="w-14 h-14 bg-white text-slate-900 rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-slate-800 group-hover:text-white">
+                {index === 0 ? <Globe size={28} /> : index === 1 ? <Zap size={28} /> : <FileText size={28} />}
+              </div>
+              <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
+              <p className="opacity-70 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -920,6 +996,8 @@ export default function App() {
           <EngineeringSection lang={lang} />
           <IPProtectionSection lang={lang} />
           <LogisticsSection lang={lang} />
+          <AmazonFbaSection lang={lang} />
+          <EcommerceSupportSection lang={lang} />
           <HowItWorks lang={lang} />
           <AboutVera lang={lang} />
           <Pricing lang={lang} onPaymentSuccess={handlePaymentSuccess} />

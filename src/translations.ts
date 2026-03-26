@@ -8,7 +8,9 @@ export const translations = {
       about: "About",
       pricing: "Pricing",
       contact: "Contact",
-      quote: "Get a Free Quote"
+      quote: "Get a Free Quote",
+      amazon_fba: "Amazon FBA",
+      ecommerce: "E-commerce"
     },
     hero: {
       tag: "Based in China • Local Expertise",
@@ -93,7 +95,8 @@ export const translations = {
         { title: "Price Negotiation", desc: "Our local experts negotiate with suppliers to get you the most competitive factory-direct prices." },
         { title: "Quality Inspection", desc: "We perform rigorous factory audits and pre-shipment inspections to ensure every unit is perfect." },
         { title: "Shipping & Logistics", desc: "From sea freight to air express, we handle all customs and delivery to your warehouse worldwide." },
-        { title: "Branding & Labeling", desc: "Custom packaging, private labeling, and branding support to help you build your own brand." }
+        { title: "Branding & Labeling", desc: "Custom packaging, private labeling, and branding support to help you build your own brand." },
+        { title: "Yiwu Market Guide", desc: "Personalized guidance through the world's largest small commodity market to find unique products." }
       ],
       cta: "View all services",
       ready: "Ready to find your next bestseller?",
@@ -174,7 +177,9 @@ export const translations = {
       express: "Express Courier",
       express_desc: "Door-to-door delivery via DHL, FedEx, or UPS. Perfect for samples and small batches.",
       customs: "Customs Clearance",
-      customs_desc: "We handle all paperwork, duties, and taxes to ensure a smooth import process."
+      customs_desc: "We handle all paperwork, duties, and taxes to ensure a smooth import process.",
+      warehousing: "Free Warehousing",
+      warehousing_desc: "We provide up to 30 days of free storage in our Yiwu warehouse to consolidate your orders from multiple suppliers."
     },
     engineering: {
       title: "Engineering & Prototyping",
@@ -204,7 +209,30 @@ export const translations = {
         { title: "Toys & Games", desc: "Plush, plastic, and educational toys meeting global safety standards." },
         { title: "Home & Kitchen", desc: "Furniture, kitchenware, and home decor items." },
         { title: "Outdoor & Sports", desc: "Camping gear, fitness equipment, and sporting goods." },
-        { title: "Promotional Products", desc: "Custom branded merchandise for events and marketing." }
+        { title: "Promotional Products", desc: "Custom branded merchandise for events and marketing." },
+        { title: "Amazon FBA", desc: "Specialized prep, labeling, and direct-to-warehouse logistics." },
+        { title: "E-commerce", desc: "Photography, videography, and graphic design for online sellers." }
+      ]
+    },
+    amazon_fba: {
+      title: "Amazon FBA Prep Services",
+      subtitle: "Direct to Amazon Warehouse",
+      description: "We help Amazon sellers scale by handling the tedious prep work. We ensure your products meet all Amazon requirements before they leave China.",
+      items: [
+        { title: "FNSKU Labeling", desc: "We apply Amazon-compliant barcodes to every unit." },
+        { title: "Bundling & Kitting", desc: "Combine multiple products into a single set or bundle." },
+        { title: "Suffocation Warning", desc: "Apply required warning labels to poly bags." },
+        { title: "Direct Shipping", desc: "Ship directly to FBA warehouses worldwide via sea or air." }
+      ]
+    },
+    ecommerce_support: {
+      title: "E-commerce Support",
+      subtitle: "Visuals that Sell",
+      description: "High-quality content is key to e-commerce success. We provide professional studio services to make your products stand out.",
+      items: [
+        { title: "Product Photography", desc: "White background and lifestyle shots for your listings." },
+        { title: "Product Videography", desc: "Short, engaging videos for social media and product pages." },
+        { title: "Graphic Design", desc: "Custom packaging design and infographic creation." }
       ]
     }
   },
@@ -215,7 +243,9 @@ export const translations = {
       about: "Nosotros",
       pricing: "Precios",
       contact: "Contacto",
-      quote: "Obtener Cotización"
+      quote: "Obtener Cotización",
+      amazon_fba: "Amazon FBA",
+      ecommerce: "E-commerce"
     },
     hero: {
       tag: "Basado en China • Experiencia Local",
@@ -299,7 +329,8 @@ export const translations = {
         { title: "Negociación de Precios", desc: "Nuestros expertos locales negocian con los proveedores para obtener los precios directos de fábrica más competitivos." },
         { title: "Inspección de Calidad", desc: "Realizamos auditorías de fábrica rigurosas e inspecciones previas al envío para garantizar que cada unidad sea perfecta." },
         { title: "Envío y Logística", desc: "Desde el flete marítimo hasta el expreso aéreo, nos encargamos de todas las aduanas y la entrega a su almacén en todo el mundo." },
-        { title: "Marca y Etiquetado", desc: "Embalaje personalizado, etiquetado privado y soporte de marca para ayudarlo a construir su propia marca." }
+        { title: "Marca y Etiquetado", desc: "Embalaje personalizado, etiquetado privado y soporte de marca para ayudarlo a construir su propia marca." },
+        { title: "Guía del Mercado de Yiwu", desc: "Guía personalizada a través del mercado de productos básicos más grande del mundo para encontrar productos únicos." }
       ],
       cta: "Ver todos los servicios",
       ready: "¿Listo para encontrar tu próximo éxito de ventas?",
@@ -380,7 +411,9 @@ export const translations = {
       express: "Mensajería Express",
       express_desc: "Entrega puerta a puerta a través de DHL, FedEx o UPS. Perfecto para muestras y lotes pequeños.",
       customs: "Despacho de Aduanas",
-      customs_desc: "Nos encargamos de todo el papeleo, aranceles e impuestos para asegurar un proceso de importación fluido."
+      customs_desc: "Nos encargamos de todo el papeleo, aranceles e impuestos para asegurar un proceso de importación fluido.",
+      warehousing: "Almacenamiento Gratuito",
+      warehousing_desc: "Ofrecemos hasta 30 días de almacenamiento gratuito en nuestro almacén de Yiwu para consolidar sus pedidos de múltiples proveedores."
     },
     engineering: {
       title: "Ingeniería y Prototipado",
@@ -410,7 +443,30 @@ export const translations = {
         { title: "Juguetes y Juegos", desc: "Juguetes de peluche, plástico y educativos que cumplen con los estándares globales de seguridad." },
         { title: "Hogar y Cocina", desc: "Muebles, utensilios de cocina y artículos de decoración para el hogar." },
         { title: "Aire Libre y Deportes", desc: "Equipo de camping, equipo de fitness y artículos deportivos." },
-        { title: "Productos Promocionales", desc: "Mercancía personalizada para eventos y marketing." }
+        { title: "Productos Promocionales", desc: "Mercancía personalizada para eventos y marketing." },
+        { title: "Amazon FBA", desc: "Preparación especializada, etiquetado y logística directa al almacén." },
+        { title: "E-commerce", desc: "Fotografía, videografía y diseño gráfico para vendedores en línea." }
+      ]
+    },
+    amazon_fba: {
+      title: "Servicios de Preparación Amazon FBA",
+      subtitle: "Directo al Almacén de Amazon",
+      description: "Ayudamos a los vendedores de Amazon a escalar encargándonos del tedioso trabajo de preparación. Nos aseguramos de que sus productos cumplan con todos los requisitos de Amazon antes de salir de China.",
+      items: [
+        { title: "Etiquetado FNSKU", desc: "Aplicamos códigos de barras compatibles con Amazon a cada unidad." },
+        { title: "Bundling y Kitting", desc: "Combine múltiples productos en un solo juego o paquete." },
+        { title: "Advertencia de Asfixia", desc: "Aplique las etiquetas de advertencia requeridas a las bolsas de polietileno." },
+        { title: "Envío Directo", desc: "Envíe directamente a los almacenes de FBA en todo el mundo por mar o aire." }
+      ]
+    },
+    ecommerce_support: {
+      title: "Soporte para E-commerce",
+      subtitle: "Visuales que Venden",
+      description: "El contenido de alta calidad es clave para el éxito del comercio electrónico. Ofrecemos servicios de estudio profesional para que sus productos destaquen.",
+      items: [
+        { title: "Fotografía de Producto", desc: "Fotos con fondo blanco y de estilo de vida para sus listados." },
+        { title: "Videografía de Producto", desc: "Videos cortos y atractivos para redes sociales y páginas de productos." },
+        { title: "Diseño Gráfico", desc: "Diseño de empaques personalizados y creación de infografías." }
       ]
     }
   },
@@ -421,7 +477,9 @@ export const translations = {
       about: "À Propos",
       pricing: "Tarifs",
       contact: "Contact",
-      quote: "Devis Gratuit"
+      quote: "Devis Gratuit",
+      amazon_fba: "Amazon FBA",
+      ecommerce: "E-commerce"
     },
     hero: {
       tag: "Basé en Chine • Expertise Locale",
@@ -586,7 +644,9 @@ export const translations = {
       express: "Courrier Express",
       express_desc: "Livraison porte-à-porte via DHL, FedEx ou UPS. Parfait pour les échantillons et les petits lots.",
       customs: "Dédouanement",
-      customs_desc: "Nous gérons tous les documents, droits et taxes pour assurer un processus d'importation fluide."
+      customs_desc: "Nous gérons tous les documents, droits et taxes pour assurer un processus d'importation fluide.",
+      warehousing: "Entreposage Gratuit",
+      warehousing_desc: "Nous offrons jusqu'à 30 jours de stockage gratuit dans notre entrepôt de Yiwu pour regrouper vos commandes de plusieurs fournisseurs."
     },
     engineering: {
       title: "Ingénierie et Prototypage",
@@ -616,7 +676,30 @@ export const translations = {
         { title: "Jouets et Jeux", desc: "Jouets en peluche, en plastique et éducatifs répondant aux normes de sécurité mondiales." },
         { title: "Maison et Cuisine", desc: "Meubles, ustensiles de cuisine et articles de décoration intérieure." },
         { title: "Plein Air et Sports", desc: "Matériel de camping, équipement de fitness et articles de sport." },
-        { title: "Produits Promotionnels", desc: "Marchandises personnalisées pour les événements et le marketing." }
+        { title: "Produits Promotionnels", desc: "Marchandises personnalisées pour les événements et le marketing." },
+        { title: "Amazon FBA", desc: "Préparation spécialisée, étiquetage et logistique directe à l'entrepôt." },
+        { title: "E-commerce", desc: "Photographie, vidéographie et design graphique pour les vendeurs en ligne." }
+      ]
+    },
+    amazon_fba: {
+      title: "Services de Préparation Amazon FBA",
+      subtitle: "Directement à l'Entrepôt Amazon",
+      description: "Nous aidons les vendeurs Amazon à se développer en gérant le travail de préparation fastidieux. Nous nous assurons que vos produits répondent à toutes les exigences d'Amazon avant de quitter la Chine.",
+      items: [
+        { title: "Étiquetage FNSKU", desc: "Nous appliquons des codes-barres conformes à Amazon sur chaque unité." },
+        { title: "Regroupement & Kitting", desc: "Combinez plusieurs produits en un seul ensemble ou lot." },
+        { title: "Avertissement de Suffocation", desc: "Appliquez les étiquettes d'avertissement requises sur les sacs en polyéthylène." },
+        { title: "Expédition Directe", desc: "Expédiez directement aux entrepôts FBA dans le monde entier par mer ou par air." }
+      ]
+    },
+    ecommerce_support: {
+      title: "Support E-commerce",
+      subtitle: "Des Visuels qui Vendent",
+      description: "Un contenu de haute qualité est la clé du succès du commerce électronique. Nous fournissons des services de studio professionnels pour faire ressortir vos produits.",
+      items: [
+        { title: "Photographie de Produit", desc: "Photos sur fond blanc et mises en situation pour vos fiches produits." },
+        { title: "Vidéographie de Produit", desc: "Vidéos courtes et attrayantes pour les réseaux sociaux et les pages produits." },
+        { title: "Design Graphique", desc: "Conception d'emballages personnalisés et création d'infographies." }
       ]
     }
   },
@@ -627,7 +710,9 @@ export const translations = {
       about: "Über uns",
       pricing: "Preise",
       contact: "Kontakt",
-      quote: "Angebot anfordern"
+      quote: "Angebot anfordern",
+      amazon_fba: "Amazon FBA",
+      ecommerce: "E-Commerce"
     },
     hero: {
       tag: "Sitz in China • Lokale Expertise",
@@ -792,7 +877,9 @@ export const translations = {
       express: "Express-Kurier",
       express_desc: "Tür-zu-Tür-Lieferung über DHL, FedEx oder UPS. Perfekt für Muster und kleine Chargen.",
       customs: "Zollabwicklung",
-      customs_desc: "Wir erledigen alle Formalitäten, Zölle und Steuern, um einen reibungslosen Importprozess zu gewährleisten."
+      customs_desc: "Wir erledigen alle Formalitäten, Zölle und Steuern, um einen reibungslosen Importprozess zu gewährleisten.",
+      warehousing: "Kostenlose Lagerung",
+      warehousing_desc: "Wir bieten bis zu 30 Tage kostenlose Lagerung in unserem Lager in Yiwu an, um Ihre Bestellungen von mehreren Lieferanten zu konsolidieren."
     },
     engineering: {
       title: "Engineering & Prototyping",
@@ -822,7 +909,30 @@ export const translations = {
         { title: "Spielzeug & Spiele", desc: "Plüsch-, Kunststoff- und Lernspielzeug, das globale Sicherheitsstandards erfüllt." },
         { title: "Haus & Küche", desc: "Möbel, Küchenutensilien und Dekorationsartikel." },
         { title: "Outdoor & Sport", desc: "Campingausrüstung, Fitnessgeräte und Sportartikel." },
-        { title: "Werbeartikel", desc: "Individuell gebrandete Artikel für Events und Marketing." }
+        { title: "Werbeartikel", desc: "Individuell gebrandete Artikel für Events und Marketing." },
+        { title: "Amazon FBA", desc: "Spezialisierte Vorbereitung, Etikettierung und Logistik direkt zum Lager." },
+        { title: "E-Commerce", desc: "Fotografie, Videografie und Grafikdesign für Online-Verkäufer." }
+      ]
+    },
+    amazon_fba: {
+      title: "Amazon FBA Vorbereitungsservice",
+      subtitle: "Direkt zum Amazon Lager",
+      description: "Wir helfen Amazon-Verkäufern bei der Skalierung, indem wir die mühsame Vorbereitungsarbeit übernehmen. Wir stellen sicher, dass Ihre Produkte alle Amazon-Anforderungen erfüllen, bevor sie China verlassen.",
+      items: [
+        { title: "FNSKU Etikettierung", desc: "Wir bringen Amazon-konforme Barcodes auf jeder Einheit an." },
+        { title: "Bündelung & Kitting", desc: "Kombinieren Sie mehrere Produkte zu einem einzigen Set oder Bündel." },
+        { title: "Erstickungswarnung", desc: "Bringen Sie die erforderlichen Warnetiketten auf Polybeuteln an." },
+        { title: "Direktversand", desc: "Versand direkt an FBA-Lager weltweit per See- oder Luftfracht." }
+      ]
+    },
+    ecommerce_support: {
+      title: "E-Commerce Unterstützung",
+      subtitle: "Visuals, die verkaufen",
+      description: "Hochwertige Inhalte sind der Schlüssel zum Erfolg im E-Commerce. Wir bieten professionelle Studio-Dienstleistungen an, damit Ihre Produkte auffallen.",
+      items: [
+        { title: "Produktfotografie", desc: "Weißer Hintergrund und Lifestyle-Aufnahmen für Ihre Angebote." },
+        { title: "Produktvideografie", desc: "Kurze, ansprechende Videos für soziale Medien und Produktseiten." },
+        { title: "Grafikdesign", desc: "Individuelles Verpackungsdesign und Erstellung von Infografiken." }
       ]
     }
   },
@@ -833,7 +943,9 @@ export const translations = {
       about: "عن فيرا",
       pricing: "الأسعار",
       contact: "اتصل بنا",
-      quote: "احصل على عرض سعر"
+      quote: "احصل على عرض سعر",
+      amazon_fba: "أمازون FBA",
+      ecommerce: "تجارة إلكترونية"
     },
     hero: {
       tag: "مقرنا في الصين • خبرة محلية",
@@ -999,7 +1111,9 @@ export const translations = {
       express: "البريد السريع",
       express_desc: "تسليم من الباب إلى الباب عبر DHL أو FedEx أو UPS. مثالي للعينات والدفعات الصغيرة.",
       customs: "التخليص الجمركي",
-      customs_desc: "نتولى جميع الأوراق والرسوم والضرائب لضمان عملية استيراد سلسة."
+      customs_desc: "نتولى جميع الأوراق والرسوم والضرائب لضمان عملية استيراد سلسة.",
+      warehousing: "تخزين مجاني",
+      warehousing_desc: "نوفر ما يصل إلى 30 يومًا من التخزين المجاني في مستودعنا في ييوو لتوحيد طلباتك من موردين متعددين."
     },
     engineering: {
       title: "الهندسة والنماذج الأولية",
@@ -1029,7 +1143,30 @@ export const translations = {
         { title: "الألعاب والترفيه", desc: "ألعاب قطنية وبلاستيكية وتعليمية تلبي معايير السلامة العالمية." },
         { title: "المنزل والمطبخ", desc: "الأثاث وأدوات المطبخ وعناصر الديكور المنزلي." },
         { title: "الرياضة والهواء الطلق", desc: "معدات التخييم وأدوات اللياقة البدنية والسلع الرياضية." },
-        { title: "المنتجات الترويجية", desc: "سلع مخصصة للعلامات التجارية للفعاليات والتسويق." }
+        { title: "المنتجات الترويجية", desc: "سلع مخصصة للعلامات التجارية للفعاليات والتسويق." },
+        { title: "أمازون FBA", desc: "تجهيز متخصص، وضع ملصقات، ولوجستيات مباشرة إلى المستودع." },
+        { title: "تجارة إلكترونية", desc: "تصوير فوتوغرافي وفيديو وتصميم جرافيك للبائعين عبر الإنترنت." }
+      ]
+    },
+    amazon_fba: {
+      title: "خدمات تجهيز أمازون FBA",
+      subtitle: "مباشرة إلى مستودعات أمازون",
+      description: "نساعد بائعي أمازون على التوسع من خلال تولي أعمال التجهيز المرهقة. نضمن أن منتجاتك تلبي جميع متطلبات أمازون قبل مغادرتها الصين.",
+      items: [
+        { title: "تسمية FNSKU", desc: "نضع الرموز الشريطية المتوافقة مع أمازون على كل وحدة." },
+        { title: "التجميع والتجهيز", desc: "دمج منتجات متعددة في مجموعة واحدة أو حزمة." },
+        { title: "تحذير الاختناق", desc: "وضع ملصقات التحذير المطلوبة على الأكياس البلاستيكية." },
+        { title: "الشحن المباشر", desc: "الشحن مباشرة إلى مستودعات FBA في جميع أنحاء العالم عبر البحر أو الجو." }
+      ]
+    },
+    ecommerce_support: {
+      title: "دعم التجارة الإلكترونية",
+      subtitle: "مرئيات تزيد المبيعات",
+      description: "المحتوى عالي الجودة هو مفتاح النجاح في التجارة الإلكترونية. نحن نقدم خدمات استوديو احترافية لجعل منتجاتك تبرز.",
+      items: [
+        { title: "تصوير المنتجات", desc: "لقطات بخلفية بيضاء ولقطات نمط حياة لقوائم منتجاتك." },
+        { title: "تصوير فيديو للمنتجات", desc: "فيديوهات قصيرة وجذابة لوسائل التواصل الاجتماعي وصفحات المنتجات." },
+        { title: "التصميم الجرافيكي", desc: "تصميم تغليف مخصص وإنشاء رسوم بيانية (إنفوجرافيك)." }
       ]
     }
   }
