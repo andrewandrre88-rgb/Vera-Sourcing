@@ -247,7 +247,7 @@ const AboutVera = ({ lang }: { lang: Language }) => {
           className="relative"
         >
           <img 
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" 
+            src="https://lh3.googleusercontent.com/d/1QKMjl9l9oIlk3ZSrxkIOKQbmLb0k4e08" 
             alt="Vera - Founder" 
             className="rounded-[3rem] shadow-2xl w-full aspect-[4/5] object-cover"
             referrerPolicy="no-referrer"
@@ -584,21 +584,21 @@ const Pricing = ({ lang, onPaymentSuccess }: { lang: Language, onPaymentSuccess:
   const plans = [
     {
       name: t.plans.basic,
-      price: "199.00",
+      price: "49.00",
       description: t.plans.basic_desc,
       features: t.plans.basic_features,
       highlight: false
     },
     {
       name: t.plans.standard,
-      price: "499.00",
+      price: "79.00",
       description: t.plans.standard_desc,
       features: t.plans.standard_features,
       highlight: true
     },
     {
       name: t.plans.premium,
-      price: "999.00",
+      price: "199.00",
       description: t.plans.premium_desc,
       features: t.plans.premium_features,
       highlight: false
