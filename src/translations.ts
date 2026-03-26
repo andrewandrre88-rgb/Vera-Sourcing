@@ -175,6 +175,37 @@ export const translations = {
       express_desc: "Door-to-door delivery via DHL, FedEx, or UPS. Perfect for samples and small batches.",
       customs: "Customs Clearance",
       customs_desc: "We handle all paperwork, duties, and taxes to ensure a smooth import process."
+    },
+    engineering: {
+      title: "Engineering & Prototyping",
+      subtitle: "From Concept to Reality",
+      description: "We don't just find factories; we help you build better products. Our engineering team assists with CAD designs, material selection, and functional prototyping.",
+      items: [
+        { title: "CAD Design", desc: "Professional 2D and 3D modeling to ensure your product is ready for mass production." },
+        { title: "Prototyping", desc: "Rapid 3D printing and CNC samples to test form and function before you commit to tooling." },
+        { title: "Tooling Management", desc: "We oversee the creation of molds and dies, ensuring precision and longevity." }
+      ]
+    },
+    ip_protection: {
+      title: "IP Protection & Ethics",
+      subtitle: "Your Ideas are Safe with Us",
+      description: "Protecting your intellectual property is our top priority. We implement strict NDAs and work only with ethical, audited factories.",
+      items: [
+        { title: "Strict NDAs", desc: "Legally binding non-disclosure agreements with every factory we vet." },
+        { title: "Patent Support", desc: "Guidance on registering your trademarks and patents in China." },
+        { title: "Ethical Sourcing", desc: "We ensure fair labor practices and environmental standards are met." }
+      ]
+    },
+    industries: {
+      title: "Industries We Serve",
+      subtitle: "Expertise Across Categories",
+      items: [
+        { title: "Electronics", desc: "Consumer tech, PCBA, and smart home devices." },
+        { title: "Toys & Games", desc: "Plush, plastic, and educational toys meeting global safety standards." },
+        { title: "Home & Kitchen", desc: "Furniture, kitchenware, and home decor items." },
+        { title: "Outdoor & Sports", desc: "Camping gear, fitness equipment, and sporting goods." },
+        { title: "Promotional Products", desc: "Custom branded merchandise for events and marketing." }
+      ]
     }
   },
   es: {
@@ -350,6 +381,37 @@ export const translations = {
       express_desc: "Entrega puerta a puerta a través de DHL, FedEx o UPS. Perfecto para muestras y lotes pequeños.",
       customs: "Despacho de Aduanas",
       customs_desc: "Nos encargamos de todo el papeleo, aranceles e impuestos para asegurar un proceso de importación fluido."
+    },
+    engineering: {
+      title: "Ingeniería y Prototipado",
+      subtitle: "Del Concepto a la Realidad",
+      description: "No solo buscamos fábricas; le ayudamos a construir mejores productos. Nuestro equipo de ingeniería asiste con diseños CAD, selección de materiales y prototipado funcional.",
+      items: [
+        { title: "Diseño CAD", desc: "Modelado profesional en 2D y 3D para asegurar que su producto esté listo para la producción en masa." },
+        { title: "Prototipado", desc: "Impresión 3D rápida y muestras CNC para probar forma y función antes de invertir en moldes." },
+        { title: "Gestión de Moldes", desc: "Supervisamos la creación de moldes y matrices, asegurando precisión y longevidad." }
+      ]
+    },
+    ip_protection: {
+      title: "Protección de IP y Ética",
+      subtitle: "Sus Ideas están Seguras con Nosotros",
+      description: "Proteger su propiedad intelectual es nuestra máxima prioridad. Implementamos acuerdos de confidencialidad estrictos y trabajamos solo con fábricas éticas y auditadas.",
+      items: [
+        { title: "Acuerdos de Confidencialidad", desc: "Acuerdos legalmente vinculantes con cada fábrica que verificamos." },
+        { title: "Soporte de Patentes", desc: "Guía sobre el registro de sus marcas y patentes en China." },
+        { title: "Sourcing Ético", desc: "Aseguramos que se cumplan las prácticas laborales justas y los estándares ambientales." }
+      ]
+    },
+    industries: {
+      title: "Industrias que Servimos",
+      subtitle: "Experiencia en Diversas Categorías",
+      items: [
+        { title: "Electrónica", desc: "Tecnología de consumo, PCBA y dispositivos para el hogar inteligente." },
+        { title: "Juguetes y Juegos", desc: "Juguetes de peluche, plástico y educativos que cumplen con los estándares globales de seguridad." },
+        { title: "Hogar y Cocina", desc: "Muebles, utensilios de cocina y artículos de decoración para el hogar." },
+        { title: "Aire Libre y Deportes", desc: "Equipo de camping, equipo de fitness y artículos deportivos." },
+        { title: "Productos Promocionales", desc: "Mercancía personalizada para eventos y marketing." }
+      ]
     }
   },
   fr: {
@@ -525,6 +587,37 @@ export const translations = {
       express_desc: "Livraison porte-à-porte via DHL, FedEx ou UPS. Parfait pour les échantillons et les petits lots.",
       customs: "Dédouanement",
       customs_desc: "Nous gérons tous les documents, droits et taxes pour assurer un processus d'importation fluide."
+    },
+    engineering: {
+      title: "Ingénierie et Prototypage",
+      subtitle: "Du Concept à la Réalité",
+      description: "Nous ne nous contentons pas de trouver des usines ; nous vous aidons à construire de meilleurs produits. Notre équipe d'ingénierie vous assiste dans la conception CAO, le choix des matériaux et le prototypage fonctionnel.",
+      items: [
+        { title: "Conception CAO", desc: "Modélisation 2D et 3D professionnelle pour garantir que votre produit est prêt pour la production de masse." },
+        { title: "Prototypage", desc: "Impression 3D rapide et échantillons CNC pour tester la forme et la fonction avant de s'engager dans l'outillage." },
+        { title: "Gestion de l'Outillage", desc: "Nous supervisons la création de moules et de matrices, garantissant précision et longévité." }
+      ]
+    },
+    ip_protection: {
+      title: "Protection de la PI et Éthique",
+      subtitle: "Vos Idées sont en Sécurité avec Nous",
+      description: "La protection de votre propriété intellectuelle est notre priorité absolue. Nous mettons en œuvre des accords de confidentialité stricts et ne travaillons qu'avec des usines éthiques et auditées.",
+      items: [
+        { title: "Accords de Confidentialité Stricts", desc: "Accords de non-divulgation juridiquement contraignants avec chaque usine que nous sélectionnons." },
+        { title: "Support aux Brevets", desc: "Conseils sur l'enregistrement de vos marques et brevets en Chine." },
+        { title: "Sourcing Éthique", desc: "Nous veillons au respect des pratiques de travail équitables et des normes environnementales." }
+      ]
+    },
+    industries: {
+      title: "Secteurs que Nous Servons",
+      subtitle: "Expertise dans Toutes les Catégories",
+      items: [
+        { title: "Électronique", desc: "Technologies grand public, PCBA et appareils domestiques intelligents." },
+        { title: "Jouets et Jeux", desc: "Jouets en peluche, en plastique et éducatifs répondant aux normes de sécurité mondiales." },
+        { title: "Maison et Cuisine", desc: "Meubles, ustensiles de cuisine et articles de décoration intérieure." },
+        { title: "Plein Air et Sports", desc: "Matériel de camping, équipement de fitness et articles de sport." },
+        { title: "Produits Promotionnels", desc: "Marchandises personnalisées pour les événements et le marketing." }
+      ]
     }
   },
   de: {
@@ -700,6 +793,37 @@ export const translations = {
       express_desc: "Tür-zu-Tür-Lieferung über DHL, FedEx oder UPS. Perfekt für Muster und kleine Chargen.",
       customs: "Zollabwicklung",
       customs_desc: "Wir erledigen alle Formalitäten, Zölle und Steuern, um einen reibungslosen Importprozess zu gewährleisten."
+    },
+    engineering: {
+      title: "Engineering & Prototyping",
+      subtitle: "Vom Konzept zur Realität",
+      description: "Wir finden nicht nur Fabriken; wir helfen Ihnen, bessere Produkte zu bauen. Unser Engineering-Team unterstützt Sie bei CAD-Designs, Materialauswahl und funktionalem Prototyping.",
+      items: [
+        { title: "CAD-Design", desc: "Professionelle 2D- und 3D-Modellierung, um sicherzustellen, dass Ihr Produkt bereit für die Massenproduktion ist." },
+        { title: "Prototyping", desc: "Schneller 3D-Druck und CNC-Muster, um Form und Funktion zu testen, bevor Sie in Werkzeuge investieren." },
+        { title: "Werkzeugmanagement", desc: "Wir überwachen die Erstellung von Formen und Matrizen und gewährleisten Präzision und Langlebigkeit." }
+      ]
+    },
+    ip_protection: {
+      title: "IP-Schutz & Ethik",
+      subtitle: "Ihre Ideen sind bei uns sicher",
+      description: "Der Schutz Ihres geistigen Eigentums ist unsere oberste Priorität. Wir setzen strenge Geheimhaltungsvereinbarungen um und arbeiten nur mit ethischen, geprüften Fabriken zusammen.",
+      items: [
+        { title: "Strenge NDAs", desc: "Rechtlich bindende Geheimhaltungsvereinbarungen mit jeder von uns geprüften Fabrik." },
+        { title: "Patent-Unterstützung", desc: "Beratung bei der Registrierung Ihrer Marken und Patente in China." },
+        { title: "Ethisches Sourcing", desc: "Wir stellen sicher, dass faire Arbeitspraktiken und Umweltstandards eingehalten werden." }
+      ]
+    },
+    industries: {
+      title: "Branchen, die wir bedienen",
+      subtitle: "Expertise über Kategorien hinweg",
+      items: [
+        { title: "Elektronik", desc: "Unterhaltungselektronik, PCBA und Smart-Home-Geräte." },
+        { title: "Spielzeug & Spiele", desc: "Plüsch-, Kunststoff- und Lernspielzeug, das globale Sicherheitsstandards erfüllt." },
+        { title: "Haus & Küche", desc: "Möbel, Küchenutensilien und Dekorationsartikel." },
+        { title: "Outdoor & Sport", desc: "Campingausrüstung, Fitnessgeräte und Sportartikel." },
+        { title: "Werbeartikel", desc: "Individuell gebrandete Artikel für Events und Marketing." }
+      ]
     }
   },
   ar: {
@@ -876,6 +1000,37 @@ export const translations = {
       express_desc: "تسليم من الباب إلى الباب عبر DHL أو FedEx أو UPS. مثالي للعينات والدفعات الصغيرة.",
       customs: "التخليص الجمركي",
       customs_desc: "نتولى جميع الأوراق والرسوم والضرائب لضمان عملية استيراد سلسة."
+    },
+    engineering: {
+      title: "الهندسة والنماذج الأولية",
+      subtitle: "من المفهوم إلى الواقع",
+      description: "نحن لا نجد المصانع فحسب؛ بل نساعدك في بناء منتجات أفضل. يساعد فريقنا الهندسي في تصاميم CAD واختيار المواد والنماذج الأولية الوظيفية.",
+      items: [
+        { title: "تصميم CAD", desc: "نمذجة احترافية ثنائية وثلاثية الأبعاد لضمان جاهزية منتجك للإنتاج الضخم." },
+        { title: "النماذج الأولية", desc: "طباعة ثلاثية الأبعاد سريعة وعينات CNC لاختبار الشكل والوظيفة قبل البدء في التصنيع." },
+        { title: "إدارة الأدوات", desc: "نشرف على إنشاء القوالب والقوالب، مما يضمن الدقة وطول العمر." }
+      ]
+    },
+    ip_protection: {
+      title: "حماية الملكية الفكرية والأخلاقيات",
+      subtitle: "أفكارك في أمان معنا",
+      description: "حماية ملكيتك الفكرية هي أولويتنا القصوى. نحن نطبق اتفاقيات عدم إفشاء صارمة ونعمل فقط مع مصانع أخلاقية ومدققة.",
+      items: [
+        { title: "اتفاقيات عدم إفشاء صارمة", desc: "اتفاقيات عدم إفشاء ملزمة قانوناً مع كل مصنع نقوم بفحصه." },
+        { title: "دعم براءات الاختراع", desc: "إرشادات حول تسجيل علاماتك التجارية وبراءات اختراعك في الصين." },
+        { title: "التوريد الأخلاقي", desc: "نحن نضمن تلبية ممارسات العمل العادلة والمعايير البيئية." }
+      ]
+    },
+    industries: {
+      title: "الصناعات التي نخدمها",
+      subtitle: "خبرة عبر الفئات",
+      items: [
+        { title: "الإلكترونيات", desc: "التكنولوجيا الاستهلاكية، PCBA، وأجهزة المنزل الذكي." },
+        { title: "الألعاب والترفيه", desc: "ألعاب قطنية وبلاستيكية وتعليمية تلبي معايير السلامة العالمية." },
+        { title: "المنزل والمطبخ", desc: "الأثاث وأدوات المطبخ وعناصر الديكور المنزلي." },
+        { title: "الرياضة والهواء الطلق", desc: "معدات التخييم وأدوات اللياقة البدنية والسلع الرياضية." },
+        { title: "المنتجات الترويجية", desc: "سلع مخصصة للعلامات التجارية للفعاليات والتسويق." }
+      ]
     }
   }
 };

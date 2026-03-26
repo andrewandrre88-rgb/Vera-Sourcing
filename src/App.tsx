@@ -58,6 +58,7 @@ const Navbar = ({ lang, setLang }: { lang: Language, setLang: (l: Language) => v
         
         <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
           <a href="#services" className="hover:text-slate-900 transition-colors">{t.services}</a>
+          <a href="#industries" className="hover:text-slate-900 transition-colors">{translations[lang].industries.title}</a>
           <a href="#pricing" className="hover:text-slate-900 transition-colors">{t.pricing}</a>
           <a href="#about" className="hover:text-slate-900 transition-colors">{t.about}</a>
           <a href="#how-it-works" className="hover:text-slate-900 transition-colors">{translations[lang].nav.home}</a>
@@ -114,6 +115,7 @@ const Navbar = ({ lang, setLang }: { lang: Language, setLang: (l: Language) => v
               ))}
             </div>
             <a href="#services" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.services}</a>
+            <a href="#industries" onClick={() => setIsOpen(false)} className="text-lg font-medium">{translations[lang].industries.title}</a>
             <a href="#pricing" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.pricing}</a>
             <a href="#about" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.about}</a>
             <a href="#faq" onClick={() => setIsOpen(false)} className="text-lg font-medium">FAQ</a>
@@ -265,7 +267,7 @@ const AboutVera = ({ lang }: { lang: Language }) => {
 const LogisticsSection = ({ lang }: { lang: Language }) => {
   const t = translations[lang].logistics;
   return (
-    <section className="section-padding bg-slate-900 text-white">
+    <section id="logistics" className="section-padding bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1">
@@ -309,6 +311,99 @@ const LogisticsSection = ({ lang }: { lang: Language }) => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const EngineeringSection = ({ lang }: { lang: Language }) => {
+  const t = translations[lang].engineering;
+  return (
+    <section id="engineering" className="section-padding bg-white">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-slate-500 uppercase bg-slate-100 rounded-full">
+            {t.subtitle}
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-8">{t.title}</h2>
+          <p className="text-lg text-slate-600 mb-10 leading-relaxed">{t.description}</p>
+          <div className="space-y-8">
+            {t.items.map((item, index) => (
+              <div key={index} className="flex gap-6">
+                <div className="w-12 h-12 bg-slate-900 rounded-2xl flex items-center justify-center shrink-0 text-white">
+                  <Zap size={24} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-slate-600">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="relative">
+          <img 
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" 
+            alt="Engineering and Prototyping" 
+            className="rounded-[3rem] shadow-2xl w-full aspect-[4/3] object-cover"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute -top-6 -right-6 w-32 h-32 bg-slate-100 rounded-full flex items-center justify-center border-4 border-white shadow-xl">
+            <Handshake size={48} className="text-slate-900" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const IPProtectionSection = ({ lang }: { lang: Language }) => {
+  const t = translations[lang].ip_protection;
+  return (
+    <section id="ip-protection" className="section-padding bg-slate-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">{t.title}</h2>
+          <p className="text-slate-600 max-w-2xl mx-auto">{t.description}</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {t.items.map((item, index) => (
+            <div key={index} className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-md transition-all">
+              <div className="w-14 h-14 bg-slate-900 text-white rounded-2xl flex items-center justify-center mb-8">
+                <ShieldCheck size={28} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
+              <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const IndustriesSection = ({ lang }: { lang: Language }) => {
+  const t = translations[lang].industries;
+  const icons = [<Zap size={24} />, <Star size={24} />, <Handshake size={24} />, <Truck size={24} />, <Tag size={24} />];
+  
+  return (
+    <section id="industries" className="section-padding bg-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">{t.title}</h2>
+          <p className="text-slate-600 max-w-2xl mx-auto">{t.subtitle}</p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          {t.items.map((industry, index) => (
+            <div key={index} className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-slate-900 hover:text-white transition-all group">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-slate-800">
+                {icons[index % icons.length]}
+              </div>
+              <h3 className="text-xl font-bold mb-3">{industry.title}</h3>
+              <p className="text-sm opacity-70 leading-relaxed">{industry.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -820,20 +915,14 @@ export default function App() {
         <main>
           <Hero lang={lang} />
           <WhyVera lang={lang} />
-          <AboutVera lang={lang} />
           <Services lang={lang} />
+          <IndustriesSection lang={lang} />
+          <EngineeringSection lang={lang} />
+          <IPProtectionSection lang={lang} />
           <LogisticsSection lang={lang} />
-          <Pricing lang={lang} onPaymentSuccess={handlePaymentSuccess} />
           <HowItWorks lang={lang} />
-          <section className="section-padding bg-slate-50">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-5xl font-bold mb-6">{ti.title}</h2>
-                <p className="text-slate-600">{ti.subtitle}</p>
-              </div>
-              <IntakeForm lang={lang} onComplete={() => setView('success')} />
-            </div>
-          </section>
+          <AboutVera lang={lang} />
+          <Pricing lang={lang} onPaymentSuccess={handlePaymentSuccess} />
           <Testimonials lang={lang} />
           <FAQ lang={lang} />
           <Contact lang={lang} />
