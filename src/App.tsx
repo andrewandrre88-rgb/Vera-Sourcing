@@ -659,45 +659,46 @@ const Contact = ({ lang }: { lang: Language }) => {
         <div className="relative z-10 grid lg:grid-cols-2 gap-10 lg:gap-16">
           <div>
             <h2 className="text-3xl md:text-6xl font-bold mb-6 md:mb-8">{t.title}</h2>
-            <p className="text-lg md:text-xl text-slate-400 mb-8 md:mb-12">{t.subtitle}</p>
-            
-            <div className="space-y-4 md:space-y-6">
-              <a href="https://wa.me/8618933252679" className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-all border border-white/10 group">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-xl flex items-center justify-center shrink-0">
-                  <MessageCircle size={20} className="md:w-6 md:h-6" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs md:text-sm text-slate-400">WhatsApp</p>
-                  <p className="text-base md:text-lg font-bold truncate">+86 18933252679</p>
-                </div>
-                <ArrowRight className={cn("ml-auto text-slate-600 group-hover:text-white transition-all shrink-0", lang === 'ar' && "rotate-180")} />
-              </a>
-
-              <a href="mailto:vera.easterm@gmail.com" className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-all border border-white/10 group">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-500 rounded-xl flex items-center justify-center shrink-0">
-                  <Mail size={20} className="md:w-6 md:h-6" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs md:text-sm text-slate-400">Email</p>
-                  <p className="text-base md:text-lg font-bold truncate">vera.easterm@gmail.com</p>
-                </div>
-                <ArrowRight className={cn("ml-auto text-slate-600 group-hover:text-white transition-all shrink-0", lang === 'ar' && "rotate-180")} />
-              </a>
-
-              <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-slate-700 rounded-xl flex items-center justify-center shrink-0">
-                  <QrCode size={20} className="md:w-6 md:h-6" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs md:text-sm text-slate-400">WeChat ID</p>
-                  <p className="text-base md:text-lg font-bold truncate">18933252679</p>
-                </div>
-              </div>
-            </div>
+            <p className="text-lg md:text-xl text-slate-400 leading-relaxed">{t.subtitle}</p>
           </div>
 
           <div className="bg-white rounded-xl md:rounded-3xl p-5 md:p-10 text-slate-900">
             <h3 className="text-xl md:text-2xl font-bold mb-6">{t.form_title}</h3>
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-4 mb-8">
+              <a href="https://wa.me/8618933252679" className="flex items-center gap-4 p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition-all border border-slate-100 group">
+                <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center shrink-0 text-white">
+                  <MessageCircle size={20} />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-[10px] uppercase tracking-wider font-bold text-slate-400">{t.whatsapp}</p>
+                  <p className="text-sm md:text-base font-bold truncate">+86 18933252679</p>
+                </div>
+                <ArrowRight size={16} className={cn("ml-auto text-slate-300 group-hover:text-slate-600 transition-all shrink-0", lang === 'ar' && "rotate-180")} />
+              </a>
+
+              <a href="mailto:vera.easterm@gmail.com" className="flex items-center gap-4 p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition-all border border-slate-100 group">
+                <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center shrink-0 text-white">
+                  <Mail size={20} />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-[10px] uppercase tracking-wider font-bold text-slate-400">{t.email_label}</p>
+                  <p className="text-sm md:text-base font-bold truncate">vera.easterm@gmail.com</p>
+                </div>
+                <ArrowRight size={16} className={cn("ml-auto text-slate-300 group-hover:text-slate-600 transition-all shrink-0", lang === 'ar' && "rotate-180")} />
+              </a>
+
+              <div className="flex items-center gap-4 p-3 rounded-xl bg-slate-50 border border-slate-100 sm:col-span-2 lg:col-span-1">
+                <div className="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center shrink-0 text-white">
+                  <QrCode size={20} />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-[10px] uppercase tracking-wider font-bold text-slate-400">{t.wechat}</p>
+                  <p className="text-sm md:text-base font-bold truncate">18933252679</p>
+                </div>
+              </div>
+            </div>
+
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-sm font-bold mb-2">{t.name}</label>
