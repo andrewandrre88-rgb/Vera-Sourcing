@@ -812,7 +812,7 @@ export default function App() {
       <div 
         className={cn(
           "min-h-screen selection:bg-slate-900 selection:text-white",
-          lang === 'ar' ? "font-sans text-right" : "font-sans text-left"
+          lang === 'ar' ? "font-arabic text-right" : "font-sans text-left"
         )}
         dir={lang === 'ar' ? 'rtl' : 'ltr'}
       >
