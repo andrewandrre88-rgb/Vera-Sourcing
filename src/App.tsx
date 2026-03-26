@@ -467,8 +467,12 @@ const Contact = ({ lang }: { lang: Language }) => {
     const product = formData.get('product');
     const message = formData.get('message');
 
-    const whatsappMessage = `Hi Vera! I'm ${name} (${email}). I'm interested in ${product}.
-Message: ${message}`;
+    const messageTemplate = t.whatsapp_message;
+    const whatsappMessage = messageTemplate
+      .replace('{name}', name as string)
+      .replace('{email}', email as string)
+      .replace('{product}', product as string)
+      .replace('{message}', message as string);
 
     const whatsappUrl = `https://wa.me/8618933252679?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
@@ -683,12 +687,13 @@ const IntakeForm = ({ lang, onComplete }: { lang: Language, onComplete: () => vo
     const country = formData.get('country');
     const requirements = formData.get('requirements');
 
-    const message = `Hi Vera! I'm interested in sourcing:
-Product: ${product}
-Quantity: ${quantity}
-Target Price: ${price}
-Shipping Country: ${country}
-Requirements: ${requirements}`;
+    const messageTemplate = t.whatsapp_message;
+    const message = messageTemplate
+      .replace('{product}', product as string)
+      .replace('{quantity}', quantity as string)
+      .replace('{price}', price as string)
+      .replace('{country}', country as string)
+      .replace('{requirements}', requirements as string);
 
     const whatsappUrl = `https://wa.me/8618933252679?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -752,7 +757,7 @@ const SuccessRedirect = ({ lang }: { lang: Language }) => {
         {t.subtitle}
       </p>
       <a 
-        href="https://wa.me/8618933252679?text=Hi Vera, I just completed my payment and I'm ready to start sourcing!" 
+        href={`https://wa.me/8618933252679?text=${encodeURIComponent(t.whatsapp_message)}`} 
         className="inline-flex items-center gap-2 bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-all"
       >
         <MessageCircle size={24} /> {t.cta}

@@ -16,7 +16,8 @@ export const translations = {
       subtitle: "— Without the Stress",
       description: "We find trusted factories, negotiate the best prices, and handle quality control and shipping for you. Your local eyes and ears in China.",
       cta_quote: "Get a Free Quote",
-      cta_whatsapp: "Chat on WhatsApp"
+      cta_whatsapp: "Chat on WhatsApp",
+      alt_logistics: "Logistics and Sourcing"
     },
     why: {
       title: "Why work with Vera?",
@@ -75,7 +76,8 @@ export const translations = {
       placeholder_name: "John Doe",
       placeholder_email: "john@example.com",
       placeholder_product: "e.g. Home Decor, Electronics",
-      placeholder_message: "Tell us about your project..."
+      placeholder_message: "Tell us about your project...",
+      whatsapp_message: "Hi Vera! I'm {name} ({email}). I'm interested in {product}.\nMessage: {message}"
     },
     footer: {
       rights: "All rights reserved.",
@@ -137,12 +139,14 @@ export const translations = {
       placeholder_quantity: "e.g. 500",
       placeholder_price: "e.g. $15.00",
       placeholder_country: "e.g. USA",
-      placeholder_requirements: "Describe branding, materials, or special features..."
+      placeholder_requirements: "Describe branding, materials, or special features...",
+      whatsapp_message: "Hi Vera! I'm interested in sourcing:\nProduct: {product}\nQuantity: {quantity}\nTarget Price: {price}\nShipping Country: {country}\nRequirements: {requirements}"
     },
     success: {
       title: "Thank you for your purchase!",
       subtitle: "Your payment was successful. You will now be redirected to WhatsApp to finalize your product details with Vera.",
-      cta: "Continue to WhatsApp"
+      cta: "Continue to WhatsApp",
+      whatsapp_message: "Hi Vera, I just completed my payment and I'm ready to start sourcing!"
     },
     floating_whatsapp: {
       label: "Chat with Vera"
@@ -247,7 +251,8 @@ export const translations = {
       placeholder_name: "Juan Pérez",
       placeholder_email: "juan@ejemplo.com",
       placeholder_product: "ej. Decoración, Electrónica",
-      placeholder_message: "Cuéntanos sobre tu proyecto..."
+      placeholder_message: "Cuéntanos sobre tu proyecto...",
+      whatsapp_message: "¡Hola Vera! Soy {name} ({email}). Estoy interesado en {product}.\nMensaje: {message}"
     },
     footer: {
       rights: "Todos los derechos reservados.",
@@ -309,12 +314,14 @@ export const translations = {
       placeholder_quantity: "ej. 500",
       placeholder_price: "ej. $15.00",
       placeholder_country: "ej. España",
-      placeholder_requirements: "Describa el branding, materiales o características especiales..."
+      placeholder_requirements: "Describa el branding, materiales o características especiales...",
+      whatsapp_message: "¡Hola Vera! Estoy interesado en el abastecimiento:\nProducto: {product}\nCantidad: {quantity}\nPrecio Objetivo: {price}\nPaís de Envío: {country}\nRequisitos: {requirements}"
     },
     success: {
       title: "¡Gracias por su compra!",
       subtitle: "Su pago fue exitoso. Ahora será redirigido a WhatsApp para finalizar los detalles de su producto con Vera.",
-      cta: "Continuar a WhatsApp"
+      cta: "Continuar a WhatsApp",
+      whatsapp_message: "¡Hola Vera, acabo de completar mi pago y estoy listo para comenzar el abastecimiento!"
     },
     floating_whatsapp: {
       label: "Chatear con Vera"
@@ -419,7 +426,8 @@ export const translations = {
       placeholder_name: "Jean Dupont",
       placeholder_email: "jean@exemple.com",
       placeholder_product: "ex. Décoration, Électronique",
-      placeholder_message: "Parlez-nous de votre projet..."
+      placeholder_message: "Parlez-nous de votre projet...",
+      whatsapp_message: "Salut Vera ! Je suis {name} ({email}). Je suis intéressé par {product}.\nMessage : {message}"
     },
     footer: {
       rights: "Tous droits réservés.",
@@ -481,12 +489,14 @@ export const translations = {
       placeholder_quantity: "ex. 500",
       placeholder_price: "ex. $15.00",
       placeholder_country: "ex. France",
-      placeholder_requirements: "Décrivez le branding, les matériaux ou les caractéristiques spéciales..."
+      placeholder_requirements: "Décrivez le branding, les matériaux ou les caractéristiques spéciales...",
+      whatsapp_message: "Salut Vera ! Je suis intéressé par le sourcing :\nProduit : {product}\nQuantité : {quantity}\nPrix Cible : {price}\nPays d'Expédition : {country}\nExigences : {requirements}"
     },
     success: {
       title: "Merci pour votre achat !",
       subtitle: "Votre paiement a été effectué avec succès. Vous allez maintenant être redirigé vers WhatsApp pour finaliser les détails de votre produit avec Vera.",
-      cta: "Continuer vers WhatsApp"
+      cta: "Continuer vers WhatsApp",
+      whatsapp_message: "Salut Vera, je viens de terminer mon paiement et je suis prêt à commencer le sourcing !"
     },
     floating_whatsapp: {
       label: "Discuter avec Vera"
@@ -591,7 +601,8 @@ export const translations = {
       placeholder_name: "Max Mustermann",
       placeholder_email: "max@beispiel.de",
       placeholder_product: "z.B. Heimdeko, Elektronik",
-      placeholder_message: "Erzählen Sie uns von Ihrem Projekt..."
+      placeholder_message: "Erzählen Sie uns von Ihrem Projekt...",
+      whatsapp_message: "Hallo Vera! Ich bin {name} ({email}). Ich interessiere mich für {product}.\nNachricht: {message}"
     },
     footer: {
       rights: "Alle Rechte vorbehalten.",
@@ -653,12 +664,14 @@ export const translations = {
       placeholder_quantity: "z.B. 500",
       placeholder_price: "z.B. $15.00",
       placeholder_country: "z.B. Deutschland",
-      placeholder_requirements: "Beschreiben Sie Branding, Materialien oder besondere Merkmale..."
+      placeholder_requirements: "Beschreiben Sie Branding, Materialien oder besondere Merkmale...",
+      whatsapp_message: "Hallo Vera! Ich bin am Sourcing interessiert:\nProdukt: {product}\nAnzahl: {quantity}\nZielpreis: {price}\nVersandland: {country}\nAnforderungen: {requirements}"
     },
     success: {
       title: "Vielen Dank für Ihren Kauf!",
       subtitle: "Ihre Zahlung war erfolgreich. Sie werden nun zu WhatsApp weitergeleitet, um Ihre Produktdetails mit Vera zu finalisieren.",
-      cta: "Weiter zu WhatsApp"
+      cta: "Weiter zu WhatsApp",
+      whatsapp_message: "Hallo Vera, ich habe gerade meine Zahlung abgeschlossen und bin bereit für das Sourcing!"
     },
     floating_whatsapp: {
       label: "Mit Vera chatten"
@@ -763,7 +776,8 @@ export const translations = {
       placeholder_name: "أحمد محمد",
       placeholder_email: "ahmed@example.com",
       placeholder_product: "مثال: ديكور منزلي، إلكترونيات",
-      placeholder_message: "أخبرنا عن مشروعك..."
+      placeholder_message: "أخبرنا عن مشروعك...",
+      whatsapp_message: "مرحباً فيرا! أنا {name} ({email}). أنا مهتم بـ {product}.\nالرسالة: {message}"
     },
     footer: {
       rights: "جميع الحقوق محفوظة.",
@@ -825,12 +839,14 @@ export const translations = {
       placeholder_quantity: "مثال: 500",
       placeholder_price: "مثال: $15.00",
       placeholder_country: "مثال: السعودية",
-      placeholder_requirements: "صف العلامة التجارية أو المواد أو الميزات الخاصة..."
+      placeholder_requirements: "صف العلامة التجارية أو المواد أو الميزات الخاصة...",
+      whatsapp_message: "مرحباً فيرا! أنا مهتم بالتوريد:\nالمنتج: {product}\nالكمية: {quantity}\nالسعر المستهدف: {price}\nبلد الشحن: {country}\nالمتطلبات: {requirements}"
     },
     success: {
       title: "شكراً لشرائك!",
       subtitle: "تمت عملية الدفع بنجاح. سيتم توجيهك الآن إلى واتساب لإنهاء تفاصيل منتجك مع فيرا.",
-      cta: "المتابعة إلى واتساب"
+      cta: "المتابعة إلى واتساب",
+      whatsapp_message: "مرحباً فيرا، لقد أكملت عملية الدفع وأنا مستعد لبدء التوريد!"
     },
     floating_whatsapp: {
       label: "تحدث مع فيرا"
@@ -845,7 +861,8 @@ export const translations = {
       experience_text: "معرفة عميقة بعمليات المصانع ومعايير الجودة ولوجستيات التصدير.",
       stats_clients: "عملاء تم خدمتهم",
       stats_factories: "مصانع تم فحصها",
-      role: "المؤسس والوكيل الرئيسي"
+      role: "المؤسس والوكيل الرئيسي",
+      alt_founder: "فيرا - المؤسس"
     },
     logistics: {
       title: "حلول اللوجستيات العالمية",
