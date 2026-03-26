@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Search, 
   Handshake, 
@@ -28,6 +28,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { translations, Language } from './translations';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -39,6 +40,8 @@ function cn(...inputs: ClassValue[]) {
 const Navbar = ({ lang, setLang }: { lang: Language, setLang: (l: Language) => void }) => {
   const [isOpen, setIsOpen] = useState(false);
   const t = translations[lang].nav;
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   const languages: { code: Language; label: string }[] = [
     { code: 'en', label: 'English' },
@@ -48,23 +51,41 @@ const Navbar = ({ lang, setLang }: { lang: Language, setLang: (l: Language) => v
     { code: 'ar', label: 'العربية' },
   ];
 
+  const navLinks = [
+    { name: t.services, href: "#services" },
+    { name: (translations[lang] as any).industries.title, href: "#industries" },
+    { name: t.amazon_fba, href: "#amazon-fba" },
+    { name: t.ecommerce, href: "#ecommerce-support" },
+    { name: t.pricing, href: "#pricing" },
+    { name: t.about, href: "#about" },
+    { name: t.home, href: "#how-it-works" },
+    { name: "FAQ", href: "#faq" },
+  ];
+
+  const renderNavLink = (item: typeof navLinks[0], className = "") => {
+    const href = isHome ? item.href : `/${item.href}`;
+    return (
+      <a 
+        key={item.href}
+        href={href}
+        className={cn("hover:text-slate-900 transition-colors", className)}
+        onClick={() => setIsOpen(false)}
+      >
+        {item.name}
+      </a>
+    );
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <div className="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold text-xl">V</div>
           <span className="text-xl font-bold tracking-tight">Vera Sourcing</span>
-        </div>
+        </Link>
         
         <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
-          <a href="#services" className="hover:text-slate-900 transition-colors">{t.services}</a>
-          <a href="#industries" className="hover:text-slate-900 transition-colors">{translations[lang].industries.title}</a>
-          <a href="#amazon-fba" className="hover:text-slate-900 transition-colors">{t.amazon_fba}</a>
-          <a href="#ecommerce-support" className="hover:text-slate-900 transition-colors">{t.ecommerce}</a>
-          <a href="#pricing" className="hover:text-slate-900 transition-colors">{t.pricing}</a>
-          <a href="#about" className="hover:text-slate-900 transition-colors">{t.about}</a>
-          <a href="#how-it-works" className="hover:text-slate-900 transition-colors">{translations[lang].nav.home}</a>
-          <a href="#faq" className="hover:text-slate-900 transition-colors">FAQ</a>
+          {navLinks.map((item) => renderNavLink(item))}
           
           <div className="relative group">
             <button className="flex items-center gap-1 hover:text-slate-900 transition-colors uppercase">
@@ -86,7 +107,7 @@ const Navbar = ({ lang, setLang }: { lang: Language, setLang: (l: Language) => v
             </div>
           </div>
 
-          <a href="#contact" className="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-slate-800 transition-all">{t.quote}</a>
+          <a href={isHome ? "#contact" : "/#contact"} className="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-slate-800 transition-all">{t.quote}</a>
         </div>
 
         <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -116,14 +137,14 @@ const Navbar = ({ lang, setLang }: { lang: Language, setLang: (l: Language) => v
                 </button>
               ))}
             </div>
-            <a href="#services" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.services}</a>
-            <a href="#industries" onClick={() => setIsOpen(false)} className="text-lg font-medium">{translations[lang].industries.title}</a>
-            <a href="#amazon-fba" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.amazon_fba}</a>
-            <a href="#ecommerce-support" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.ecommerce}</a>
-            <a href="#pricing" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.pricing}</a>
-            <a href="#about" onClick={() => setIsOpen(false)} className="text-lg font-medium">{t.about}</a>
-            <a href="#faq" onClick={() => setIsOpen(false)} className="text-lg font-medium">FAQ</a>
-            <a href="#contact" onClick={() => setIsOpen(false)} className="bg-slate-900 text-white px-6 py-3 rounded-xl text-center font-medium">{t.quote}</a>
+            {navLinks.map((item) => renderNavLink(item, "text-lg font-medium"))}
+            <a 
+              href={isHome ? "#contact" : "/#contact"}
+              onClick={() => setIsOpen(false)}
+              className="bg-slate-900 text-white px-6 py-3 rounded-xl text-center font-medium"
+            >
+              {t.quote}
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
@@ -732,15 +753,15 @@ const Footer = ({ lang }: { lang: Language }) => {
   return (
     <footer className="py-12 px-6 border-t border-slate-100">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center text-white font-bold">V</div>
           <span className="font-bold tracking-tight">Vera Sourcing</span>
-        </div>
+        </Link>
         
         <div className="flex items-center gap-8 text-sm text-slate-500">
-          <a href="#" className="hover:text-slate-900">{t.privacy}</a>
-          <a href="#" className="hover:text-slate-900">{t.terms}</a>
-          <a href="#" className="hover:text-slate-900">{t.cookies}</a>
+          <Link to="/privacy" className="hover:text-slate-900">{t.privacy}</Link>
+          <Link to="/terms" className="hover:text-slate-900">{t.terms}</Link>
+          <Link to="/cookies" className="hover:text-slate-900">{t.cookies}</Link>
         </div>
 
         <p className="text-sm text-slate-400">
@@ -748,6 +769,36 @@ const Footer = ({ lang }: { lang: Language }) => {
         </p>
       </div>
     </footer>
+  );
+};
+
+const LegalPage = ({ lang, type }: { lang: Language, type: 'privacy' | 'terms' | 'cookies' }) => {
+  const t = (translations[lang] as any).legal[type];
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [type]);
+
+  return (
+    <div className="pt-32 pb-20 px-6">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold mb-4">{t.title}</h1>
+        <p className="text-slate-500 mb-12">{t.lastUpdated}</p>
+        
+        <div className="prose prose-slate max-w-none">
+          {t.sections ? (
+            t.sections.map((section: any, idx: number) => (
+              <div key={idx} className="mb-8">
+                <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
+                <p className="text-slate-600 leading-relaxed">{section.content}</p>
+              </div>
+            ))
+          ) : (
+            <p className="text-slate-600 leading-relaxed">{t.content}</p>
+          )}
+        </div>
+      </div>
+    </div>
   );
 };
 
@@ -989,23 +1040,30 @@ export default function App() {
         dir={lang === 'ar' ? 'rtl' : 'ltr'}
       >
         <Navbar lang={lang} setLang={setLang} />
-        <main>
-          <Hero lang={lang} />
-          <WhyVera lang={lang} />
-          <Services lang={lang} />
-          <IndustriesSection lang={lang} />
-          <EngineeringSection lang={lang} />
-          <IPProtectionSection lang={lang} />
-          <LogisticsSection lang={lang} />
-          <AmazonFbaSection lang={lang} />
-          <EcommerceSupportSection lang={lang} />
-          <HowItWorks lang={lang} />
-          <AboutVera lang={lang} />
-          <Pricing lang={lang} onPaymentSuccess={handlePaymentSuccess} />
-          <Testimonials lang={lang} />
-          <FAQ lang={lang} />
-          <Contact lang={lang} />
-        </main>
+        <Routes>
+          <Route path="/" element={
+            <main>
+              <Hero lang={lang} />
+              <WhyVera lang={lang} />
+              <Services lang={lang} />
+              <IndustriesSection lang={lang} />
+              <EngineeringSection lang={lang} />
+              <IPProtectionSection lang={lang} />
+              <LogisticsSection lang={lang} />
+              <AmazonFbaSection lang={lang} />
+              <EcommerceSupportSection lang={lang} />
+              <HowItWorks lang={lang} />
+              <AboutVera lang={lang} />
+              <Pricing lang={lang} onPaymentSuccess={handlePaymentSuccess} />
+              <Testimonials lang={lang} />
+              <FAQ lang={lang} />
+              <Contact lang={lang} />
+            </main>
+          } />
+          <Route path="/privacy" element={<LegalPage lang={lang} type="privacy" />} />
+          <Route path="/terms" element={<LegalPage lang={lang} type="terms" />} />
+          <Route path="/cookies" element={<LegalPage lang={lang} type="cookies" />} />
+        </Routes>
         <Footer lang={lang} />
         <FloatingWhatsApp lang={lang} />
       </div>

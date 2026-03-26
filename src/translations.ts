@@ -90,6 +90,49 @@ export const translations = {
       terms: "Terms of Service",
       cookies: "Cookie Policy"
     },
+    legal: {
+      privacy: {
+        title: "Privacy Policy",
+        lastUpdated: "Last updated: March 26, 2026",
+        sections: [
+          {
+            title: "1. Information We Collect",
+            content: "We collect information you provide directly to us, such as when you fill out a contact form, request a quote, or communicate with us. This may include your name, email address, phone number, and product interests."
+          },
+          {
+            title: "2. How We Use Your Information",
+            content: "We use the information we collect to provide, maintain, and improve our services, to communicate with you, and to process your sourcing requests."
+          },
+          {
+            title: "3. Information Sharing",
+            content: "We do not share your personal information with third parties except as necessary to provide our services (e.g., with trusted factories for sourcing) or as required by law."
+          }
+        ]
+      },
+      terms: {
+        title: "Terms of Service",
+        lastUpdated: "Last updated: March 26, 2026",
+        sections: [
+          {
+            title: "1. Acceptance of Terms",
+            content: "By accessing or using Vera Sourcing's services, you agree to be bound by these Terms of Service."
+          },
+          {
+            title: "2. Description of Service",
+            content: "Vera Sourcing provides product sourcing, quality inspection, and logistics services from China."
+          },
+          {
+            title: "3. User Responsibilities",
+            content: "Users are responsible for providing accurate information and for complying with all applicable laws and regulations."
+          }
+        ]
+      },
+      cookies: {
+        title: "Cookie Policy",
+        lastUpdated: "Last updated: March 26, 2026",
+        content: "We use cookies to enhance your experience on our website. Cookies are small text files stored on your device that help us analyze site traffic and remember your preferences."
+      }
+    },
     services: {
       title: "Everything you need to scale your inventory",
       subtitle: "From the first sample to global distribution, we handle the entire supply chain.",
@@ -326,6 +369,49 @@ export const translations = {
       privacy: "Política de Privacidad",
       terms: "Términos de Servicio",
       cookies: "Política de Cookies"
+    },
+    legal: {
+      privacy: {
+        title: "Política de Privacidad",
+        lastUpdated: "Última actualización: 26 de marzo de 2026",
+        sections: [
+          {
+            title: "1. Información que Recopilamos",
+            content: "Recopilamos la información que nos proporciona directamente, como cuando completa un formulario de contacto, solicita una cotización o se comunica con nosotros. Esto puede incluir su nombre, dirección de correo electrónico, número de teléfono e intereses de productos."
+          },
+          {
+            title: "2. Cómo Utilizamos su Información",
+            content: "Utilizamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, para comunicarnos con usted y para procesar sus solicitudes de abastecimiento."
+          },
+          {
+            title: "3. Intercambio de Información",
+            content: "No compartimos su información personal con terceros, excepto según sea necesario para proporcionar nuestros servicios (por ejemplo, con fábricas de confianza para el abastecimiento) o según lo exija la ley."
+          }
+        ]
+      },
+      terms: {
+        title: "Términos de Servicio",
+        lastUpdated: "Última actualización: 26 de marzo de 2026",
+        sections: [
+          {
+            title: "1. Aceptación de los Términos",
+            content: "Al acceder o utilizar los servicios de Vera Sourcing, usted acepta estar sujeto a estos Términos de Servicio."
+          },
+          {
+            title: "2. Descripción del Servicio",
+            content: "Vera Sourcing ofrece servicios de abastecimiento de productos, inspección de calidad y logística desde China."
+          },
+          {
+            title: "3. Responsabilidades del Usuario",
+            content: "Los usuarios son responsables de proporcionar información precisa y de cumplir con todas las leyes y regulaciones aplicables."
+          }
+        ]
+      },
+      cookies: {
+        title: "Política de Cookies",
+        lastUpdated: "Última actualización: 26 de marzo de 2026",
+        content: "Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Las cookies son pequeños archivos de texto almacenados en su dispositivo que nos ayudan a analizar el tráfico del sitio y recordar sus preferencias."
+      }
     },
     services: {
       title: "Todo lo que necesitas para escalar tu inventario",
@@ -564,6 +650,49 @@ export const translations = {
       terms: "Conditions d'Utilisation",
       cookies: "Politique relative aux Cookies"
     },
+    legal: {
+      privacy: {
+        title: "Politique de Confidentialité",
+        lastUpdated: "Dernière mise à jour : 26 mars 2026",
+        sections: [
+          {
+            title: "1. Informations que nous collectons",
+            content: "Nous collectons les informations que vous nous fournissez directement, par exemple lorsque vous remplissez un formulaire de contact, demandez un devis ou communiquez avec nous. Cela peut inclure votre nom, votre adresse e-mail, votre numéro de téléphone et vos intérêts pour les produits."
+          },
+          {
+            title: "2. Comment nous utilisons vos informations",
+            content: "Nous utilisons les informations que nous collectons pour fournir, maintenir et améliorer nos services, pour communiquer avec vous et pour traiter vos demandes de sourcing."
+          },
+          {
+            title: "3. Partage d'informations",
+            content: "Nous ne partageons pas vos informations personnelles avec des tiers, sauf si cela est nécessaire pour fournir nos services (par exemple, avec des usines de confiance pour le sourcing) ou si la loi l'exige."
+          }
+        ]
+      },
+      terms: {
+        title: "Conditions d'Utilisation",
+        lastUpdated: "Dernière mise à jour : 26 mars 2026",
+        sections: [
+          {
+            title: "1. Acceptation des conditions",
+            content: "En accédant ou en utilisant les services de Vera Sourcing, vous acceptez d'être lié par ces Conditions d'Utilisation."
+          },
+          {
+            title: "2. Description du service",
+            content: "Vera Sourcing fournit des services de sourcing de produits, d'inspection de qualité et de logistique depuis la Chine."
+          },
+          {
+            title: "3. Responsabilités de l'utilisateur",
+            content: "Les utilisateurs sont responsables de fournir des informations exactes et de se conformer à toutes les lois et réglementations applicables."
+          }
+        ]
+      },
+      cookies: {
+        title: "Politique relative aux Cookies",
+        lastUpdated: "Dernière mise à jour : 26 mars 2026",
+        content: "Nous utilisons des cookies pour améliorer votre expérience sur notre site web. Les cookies sont de petits fichiers texte stockés sur votre appareil qui nous aident à analyser le trafic du site et à mémoriser vos préférences."
+      }
+    },
     services: {
       title: "Tout ce dont vous avez besoin pour développer votre inventaire",
       subtitle: "Du premier échantillon à la distribution mondiale, nous gérons toute la chaîne d'approvisionnement.",
@@ -800,6 +929,49 @@ export const translations = {
       terms: "Nutzungsbedingungen",
       cookies: "Cookie-Richtlinie"
     },
+    legal: {
+      privacy: {
+        title: "Datenschutzrichtlinie",
+        lastUpdated: "Zuletzt aktualisiert: 26. März 2026",
+        sections: [
+          {
+            title: "1. Informationen, die wir sammeln",
+            content: "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, z. B. wenn Sie ein Kontaktformular ausfüllen, ein Angebot anfordern oder mit uns kommunizieren. Dies kann Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer und Ihre Produktinteressen umfassen."
+          },
+          {
+            title: "2. Wie wir Ihre Informationen verwenden",
+            content: "Wir verwenden die von uns gesammelten Informationen, um unsere Dienste bereitzustellen, zu warten und zu verbessern, um mit Ihnen zu kommunizieren und um Ihre Sourcing-Anfragen zu bearbeiten."
+          },
+          {
+            title: "3. Weitergabe von Informationen",
+            content: "Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, außer wenn dies zur Erbringung unserer Dienstleistungen erforderlich ist (z. B. an vertrauenswürdige Fabriken für das Sourcing) oder wenn dies gesetzlich vorgeschrieben ist."
+          }
+        ]
+      },
+      terms: {
+        title: "Nutzungsbedingungen",
+        lastUpdated: "Zuletzt aktualisiert: 26. März 2026",
+        sections: [
+          {
+            title: "1. Annahme der Bedingungen",
+            content: "Durch den Zugriff auf oder die Nutzung der Dienste von Vera Sourcing erklären Sie sich mit diesen Nutzungsbedingungen einverstanden."
+          },
+          {
+            title: "2. Beschreibung des Dienstes",
+            content: "Vera Sourcing bietet Produktsourcing, Qualitätsprüfung und Logistikdienstleistungen aus China an."
+          },
+          {
+            title: "3. Verantwortlichkeiten des Nutzers",
+            content: "Die Nutzer sind dafür verantwortlich, genaue Informationen bereitzustellen und alle geltenden Gesetze und Vorschriften einzuhalten."
+          }
+        ]
+      },
+      cookies: {
+        title: "Cookie-Richtlinie",
+        lastUpdated: "Zuletzt aktualisiert: 26. März 2026",
+        content: "Wir verwenden Cookies, um Ihr Erlebnis auf unserer Website zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden und uns helfen, den Website-Verkehr zu analysieren und Ihre Präferenzen zu speichern."
+      }
+    },
     services: {
       title: "Alles, was Sie brauchen, um Ihren Lagerbestand zu skalieren",
       subtitle: "Vom ersten Muster bis zum weltweiten Vertrieb übernehmen wir die gesamte Lieferkette.",
@@ -1035,6 +1207,49 @@ export const translations = {
       privacy: "سياسة الخصوصية",
       terms: "شروط الخدمة",
       cookies: "سياسة ملفات الارتباط"
+    },
+    legal: {
+      privacy: {
+        title: "سياسة الخصوصية",
+        lastUpdated: "آخر تحديث: 26 مارس 2026",
+        sections: [
+          {
+            title: "1. المعلومات التي نجمعها",
+            content: "نجمع المعلومات التي تقدمها لنا مباشرة، مثل عندما تملأ نموذج اتصال، أو تطلب عرض سعر، أو تتواصل معنا. قد يشمل ذلك اسمك وعنوان بريدك الإلكتروني ورقم هاتفك واهتماماتك بالمنتجات."
+          },
+          {
+            title: "2. كيف نستخدم معلوماتك",
+            content: "نستخدم المعلومات التي نجمعها لتوفير خدماتنا وصيانتها وتحسينها، وللتواصل معك، ولمعالجة طلبات التوريد الخاصة بك."
+          },
+          {
+            title: "3. مشاركة المعلومات",
+            content: "نحن لا نشارك معلوماتك الشخصية مع أطراف ثالثة إلا حسب الضرورة لتوفير خدماتنا (على سبيل المثال، مع مصانع موثوقة للتوريد) أو حسب ما يقتضيه القانون."
+          }
+        ]
+      },
+      terms: {
+        title: "شروط الخدمة",
+        lastUpdated: "آخر تحديث: 26 مارس 2026",
+        sections: [
+          {
+            title: "1. قبول الشروط",
+            content: "من خلال الوصول إلى خدمات Vera Sourcing أو استخدامها، فإنك توافق على الالتزام بشروط الخدمة هذه."
+          },
+          {
+            title: "2. وصف الخدمة",
+            content: "تقدم Vera Sourcing خدمات توريد المنتجات وفحص الجودة والخدمات اللوجستية من الصين."
+          },
+          {
+            title: "3. مسؤوليات المستخدم",
+            content: "يتحمل المستخدمون مسؤولية تقديم معلومات دقيقة والامتثال لجميع القوانين واللوائح المعمول بها."
+          }
+        ]
+      },
+      cookies: {
+        title: "سياسة ملفات الارتباط",
+        lastUpdated: "آخر تحديث: 26 مارس 2026",
+        content: "نحن نستخدم ملفات الارتباط لتحسين تجربتك على موقعنا. ملفات الارتباط هي ملفات نصية صغيرة يتم تخزينها على جهازك تساعدنا في تحليل حركة المرور على الموقع وتذكر تفضيلاتك."
+      }
     },
     services: {
       title: "كل ما تحتاجه لتوسيع مخزونك",
