@@ -134,20 +134,20 @@ const Navbar = ({ lang, setLang }: { lang: Language, setLang: (l: Language) => v
 const Hero = ({ lang }: { lang: Language }) => {
   const t = translations[lang].hero;
   return (
-    <section className="pt-40 pb-20 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto text-center">
+    <section className="pt-32 md:pt-40 pb-16 md:pb-20 px-4 md:px-12 lg:px-24 max-w-7xl mx-auto text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-slate-500 uppercase bg-slate-100 rounded-full">
+        <span className="inline-block px-4 py-1.5 mb-6 text-[10px] md:text-xs font-bold tracking-widest text-slate-500 uppercase bg-slate-100 rounded-full">
           {t.tag}
         </span>
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 mb-8 leading-[1.1]">
+        <h1 className="text-4xl md:text-7xl font-bold tracking-tight text-slate-900 mb-6 md:mb-8 leading-[1.1]">
           {t.title} <br className="hidden md:block" />
           <span className="text-slate-400">{t.subtitle}</span>
         </h1>
-        <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-slate-600 mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed">
           {t.description}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -651,53 +651,53 @@ const Contact = ({ lang }: { lang: Language }) => {
 
   return (
     <section id="contact" className="section-padding">
-      <div className="max-w-7xl mx-auto bg-slate-900 rounded-[3rem] p-8 md:p-20 text-white relative overflow-hidden">
+      <div className="max-w-7xl mx-auto bg-slate-900 rounded-3xl md:rounded-[3rem] p-6 md:p-20 text-white relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-slate-800 rounded-full blur-3xl -mr-48 -mt-48 opacity-50" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-slate-800 rounded-full blur-3xl -ml-48 -mb-48 opacity-50" />
 
-        <div className="relative z-10 grid lg:grid-cols-2 gap-16">
+        <div className="relative z-10 grid lg:grid-cols-2 gap-10 lg:gap-16">
           <div>
-            <h2 className="text-4xl md:text-6xl font-bold mb-8">{t.title}</h2>
-            <p className="text-xl text-slate-400 mb-12">{t.subtitle}</p>
+            <h2 className="text-3xl md:text-6xl font-bold mb-6 md:mb-8">{t.title}</h2>
+            <p className="text-lg md:text-xl text-slate-400 mb-8 md:mb-12">{t.subtitle}</p>
             
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               <a href="https://wa.me/8618933252679" className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-all border border-white/10 group">
-                <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
-                  <MessageCircle size={24} />
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-xl flex items-center justify-center shrink-0">
+                  <MessageCircle size={20} className="md:w-6 md:h-6" />
                 </div>
-                <div>
-                  <p className="text-sm text-slate-400">WhatsApp</p>
-                  <p className="text-lg font-bold">+86 18933252679</p>
+                <div className="min-w-0">
+                  <p className="text-xs md:text-sm text-slate-400">WhatsApp</p>
+                  <p className="text-base md:text-lg font-bold truncate">+86 18933252679</p>
                 </div>
-                <ArrowRight className={cn("ml-auto text-slate-600 group-hover:text-white transition-all", lang === 'ar' && "rotate-180")} />
+                <ArrowRight className={cn("ml-auto text-slate-600 group-hover:text-white transition-all shrink-0", lang === 'ar' && "rotate-180")} />
               </a>
 
               <a href="mailto:vera.easterm@gmail.com" className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-all border border-white/10 group">
-                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
-                  <Mail size={24} />
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-500 rounded-xl flex items-center justify-center shrink-0">
+                  <Mail size={20} className="md:w-6 md:h-6" />
                 </div>
-                <div>
-                  <p className="text-sm text-slate-400">Email</p>
-                  <p className="text-lg font-bold">vera.easterm@gmail.com</p>
+                <div className="min-w-0">
+                  <p className="text-xs md:text-sm text-slate-400">Email</p>
+                  <p className="text-base md:text-lg font-bold truncate">vera.easterm@gmail.com</p>
                 </div>
-                <ArrowRight className={cn("ml-auto text-slate-600 group-hover:text-white transition-all", lang === 'ar' && "rotate-180")} />
+                <ArrowRight className={cn("ml-auto text-slate-600 group-hover:text-white transition-all shrink-0", lang === 'ar' && "rotate-180")} />
               </a>
 
               <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
-                <div className="w-12 h-12 bg-slate-700 rounded-xl flex items-center justify-center">
-                  <QrCode size={24} />
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-slate-700 rounded-xl flex items-center justify-center shrink-0">
+                  <QrCode size={20} className="md:w-6 md:h-6" />
                 </div>
-                <div>
-                  <p className="text-sm text-slate-400">WeChat ID</p>
-                  <p className="text-lg font-bold">18933252679</p>
+                <div className="min-w-0">
+                  <p className="text-xs md:text-sm text-slate-400">WeChat ID</p>
+                  <p className="text-base md:text-lg font-bold truncate">18933252679</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl p-8 text-slate-900">
-            <h3 className="text-2xl font-bold mb-6">{t.form_title}</h3>
+          <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-10 text-slate-900">
+            <h3 className="text-xl md:text-2xl font-bold mb-6">{t.form_title}</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-sm font-bold mb-2">{t.name}</label>
@@ -789,7 +789,7 @@ const Pricing = ({ lang, onPaymentSuccess }: { lang: Language, onPaymentSuccess:
             <motion.div 
               key={index}
               whileHover={{ y: -10 }}
-              className={`p-10 rounded-[2.5rem] border ${plan.highlight ? 'border-slate-900 ring-4 ring-slate-900/5 shadow-2xl' : 'border-slate-100 shadow-sm'} flex flex-col`}
+              className={`p-6 md:p-10 rounded-3xl md:rounded-[2.5rem] border ${plan.highlight ? 'border-slate-900 ring-4 ring-slate-900/5 shadow-2xl' : 'border-slate-100 shadow-sm'} flex flex-col`}
             >
               {plan.highlight && (
                 <span className="bg-slate-900 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full self-start mb-6">
@@ -872,9 +872,9 @@ const IntakeForm = ({ lang, onComplete }: { lang: Language, onComplete: () => vo
   };
 
   return (
-    <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-slate-100 max-w-2xl mx-auto">
-      <h3 className="text-2xl font-bold mb-2">{t.title}</h3>
-      <p className="text-slate-500 mb-8">{t.subtitle}</p>
+    <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-2xl border border-slate-100 max-w-2xl mx-auto">
+      <h3 className="text-xl md:text-2xl font-bold mb-2">{t.title}</h3>
+      <p className="text-sm md:text-base text-slate-500 mb-8">{t.subtitle}</p>
       
       <form className="space-y-6" onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 gap-6">
@@ -918,7 +918,7 @@ const SuccessRedirect = ({ lang }: { lang: Language }) => {
     <motion.div 
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
-      className="text-center p-12 bg-white rounded-[3rem] shadow-2xl border border-slate-100 max-w-2xl mx-auto"
+      className="text-center p-6 md:p-12 bg-white rounded-3xl md:rounded-[3rem] shadow-2xl border border-slate-100 max-w-2xl mx-auto"
     >
       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-8">
         <CheckCircle2 size={40} />
