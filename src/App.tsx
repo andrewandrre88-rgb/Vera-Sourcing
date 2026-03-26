@@ -650,8 +650,8 @@ const Contact = ({ lang }: { lang: Language }) => {
   };
 
   return (
-    <section id="contact" className="section-padding">
-      <div className="max-w-7xl mx-auto bg-slate-900 rounded-3xl md:rounded-[3rem] p-6 md:p-20 text-white relative overflow-hidden">
+    <section id="contact" className="section-padding px-2 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto bg-slate-900 rounded-2xl md:rounded-[3rem] p-4 md:p-20 text-white relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-slate-800 rounded-full blur-3xl -mr-48 -mt-48 opacity-50" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-slate-800 rounded-full blur-3xl -ml-48 -mb-48 opacity-50" />
@@ -696,7 +696,7 @@ const Contact = ({ lang }: { lang: Language }) => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-10 text-slate-900">
+          <div className="bg-white rounded-xl md:rounded-3xl p-5 md:p-10 text-slate-900">
             <h3 className="text-xl md:text-2xl font-bold mb-6">{t.form_title}</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
@@ -872,7 +872,7 @@ const IntakeForm = ({ lang, onComplete }: { lang: Language, onComplete: () => vo
   };
 
   return (
-    <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-2xl border border-slate-100 max-w-2xl mx-auto">
+    <div className="bg-white rounded-xl md:rounded-3xl p-5 md:p-12 shadow-2xl border border-slate-100 max-w-2xl mx-auto">
       <h3 className="text-xl md:text-2xl font-bold mb-2">{t.title}</h3>
       <p className="text-sm md:text-base text-slate-500 mb-8">{t.subtitle}</p>
       
@@ -918,7 +918,7 @@ const SuccessRedirect = ({ lang }: { lang: Language }) => {
     <motion.div 
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
-      className="text-center p-6 md:p-12 bg-white rounded-3xl md:rounded-[3rem] shadow-2xl border border-slate-100 max-w-2xl mx-auto"
+      className="text-center p-5 md:p-12 bg-white rounded-2xl md:rounded-[3rem] shadow-2xl border border-slate-100 max-w-2xl mx-auto"
     >
       <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-8">
         <CheckCircle2 size={40} />
